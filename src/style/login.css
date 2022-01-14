@@ -1,0 +1,17 @@
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+    background-color: aliceblue;
+}
+.cardBody{
+    width:525px;
+    padding: 1rem;
+
+}
+.form-group{
+    padding: 10px 0;
+    
+}

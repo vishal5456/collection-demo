@@ -1,0 +1,94 @@
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #b591bd, #f9a569cf);
+  
+    .cardBody {
+      width: 100%;
+      padding: 1rem;
+      .formGroup {
+        padding: 10px 0;
+        margin: 0;
+        position: relative;
+        .downarrow {
+          position: absolute;
+          bottom: 1.1rem;
+          right: 1rem;
+          z-index: 1;
+        }
+      }
+      label {
+        font-size: 1.4rem;
+        padding: 0 0 0.5rem 1rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.75);
+        margin-top: 1rem;
+        text-shadow: 10px 10px solid;
+      }
+      input {
+        height: 47px;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 15px black;
+        padding: 0.5rem 1rem;
+        &::placeholder {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+      .error{
+        border: 2px solid red;
+      }
+      .header{
+          font-size: 2rem;
+          font-weight: bold;
+          padding-bottom: 2rem;
+          color: antiquewhite;
+          text-align: center;
+      }
+      
+   }
+   .dropdown{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    height: 45px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px black;
+    background-color: white;
+    align-items: center;
+    .right{
+      margin-right: 1rem;
+    }
+    .left{
+          font-size: 1rem;
+          font-weight: 500;
+          color:#232323b0;
+          padding: 1rem;
+    }
+   }
+   .error{
+     border: 2px solid red;
+   }
+    .btn {
+      text-align: center;
+      button {
+        min-width: 12rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #ffffff;
+        background-color: #f9a569;
+        border: none;
+        margin: 1rem;
+        &:focus,
+        &:active {
+          border: none;
+          outline: none;
+          background-color: #f9a569 !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }

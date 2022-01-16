@@ -1,11 +1,13 @@
+import React from "react"
 import './App.css';
+import "./component/fontawesome"
 import Dashboard from "../src/component/dashboard";
 import Login from "../src/component/login";
 import Cart from "../src/component/cart";
 import { Route , Switch} from "react-router-dom";
 
-
 function App() {
+ 
   return (
    <>
     <Switch>

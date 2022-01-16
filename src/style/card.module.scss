@@ -1,0 +1,98 @@
+.cardComponent {
+  width: 17rem;
+  margin-right: 1rem;
+    .myCard {
+      position: relative;
+      width: 17rem;
+      .like {
+        position: absolute;
+        top: -1rem;
+        right: 0;
+        z-index: 3;
+        color: red;
+        border-radius: 50%;
+        z-index: 3;
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+      }
+      .card {
+        background: #f9a569;
+        margin-bottom: 10px;
+        border-radius: 2rem;
+        width: 16rem;
+        min-height: 28rem;
+        overflow: hidden;
+        .image {
+         
+          img {
+            height: 17rem;
+          }
+        }
+        .heading {
+          color: #fff;
+          font-size: 1.25rem;
+          font-weight: 600;
+          padding: 0 1.5rem;
+          min-height: 4rem;
+        }
+        .description {
+          font-size: 0.8rem;
+          color: #fff;
+          padding: 0 1.5rem;
+        }
+        .rating {
+          padding: 0 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          .star {
+            color: #f6d820;
+          }
+          .cost {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-right: 0.5rem;
+          }
+        }
+        .whiteBox {
+          padding: 0 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          .quantityBox {
+            background-color: #fff;
+            height: 3rem;
+            width: 9rem;
+            justify-content: space-around;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            i,
+            span {
+              padding: 0 1rem;
+              font-size: 1.8rem;
+              font-weight: bold;
+            }
+          }
+          .cartBox{
+            background-color: #fff;
+            height: 3rem;
+            width: 3rem;
+            justify-content: space-around;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            i,
+            span {
+              padding: 0 1rem;
+            }
+          }
+        }
+        
+      }
+    }
+  }

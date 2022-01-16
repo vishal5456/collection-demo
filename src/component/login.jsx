@@ -84,9 +84,12 @@ export default function Index(props) {
       }
     } catch (error) {
       console.log(error);
+      setLoding(false);
+      setOtp("");
+      setErrorOtp(true);
     }
   }else{
-    console.log("reenter otp");
+    setLoding(false);
   }
   };
 

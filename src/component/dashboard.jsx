@@ -56,7 +56,7 @@ export default function Index() {
             headers:{
               'Content-Type': 'application/json'
              },
-            url: `http://asia-south1-adon-interviews.cloudfunctions.net/getProductByCategory?category=${category}`,
+            url: `https://asia-south1-adon-interviews.cloudfunctions.net/getProductByCategory?category=${category}`,
            
           })
           console.log(response);

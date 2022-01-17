@@ -39,6 +39,27 @@ export default function Index() {
                 history.push("/login");
             }
     },[])
+
+    // React.useEffect(() => {
+
+    //     const handleTabClosing = (e) => {
+    //         e.preventDefault();
+    //         localStorage.removeItem("cart");
+    //         localStorage.removeItem("credential")
+    
+    //     }
+
+    //     window.addEventListener('unload', handleTabClosing)
+        
+    //     return () => {
+    //         window.removeEventListener('unload', handleTabClosing)
+            
+    //     }
+    // })
+    
+   
+    
+    
    
     
 

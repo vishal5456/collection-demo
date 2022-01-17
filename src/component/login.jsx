@@ -65,6 +65,7 @@ export default function Index(props) {
     }
   }else{
     console.log('valoidation error');
+   
   }
   };
 
@@ -90,8 +91,30 @@ export default function Index(props) {
     }
   }else{
     setLoding(false);
+    setOtp("");
+    setErrorOtp(true);
   }
   };
+
+  const validateName = (name)=>{
+
+    if(/^[a-zA-Z][a-zA-Z ]*$/.test(name)){
+      return true;
+    }else{
+      return false;
+    }
+
+  }
+
+  const validateNumber = (number)=>{
+
+    if(/^[0-9]/.test(number)){
+      return true;
+    }else{
+      return false;
+    }
+
+  }
 
 
   const handleChange = (e) => {
@@ -117,13 +140,13 @@ export default function Index(props) {
     
     let validated = false;
       if(state){
-        if(state.name){
+        if(state.name && validateName(state.name)){
           error.name = false
         }if(state.gender){
           error.gender = false
-        }if(state.age && state.age.length<=3){
+        }if(state.age && state.age.length<=3 && validateNumber(state.age)){
           error.age = false
-        }if(state.number && state.number.length==10){
+        }if(state.number && state.number.length==10 && validateNumber(state.number)){
           error.number = false
         }
       setErrorState({...error});
@@ -136,7 +159,7 @@ export default function Index(props) {
 
 const validateOtp = ()=>{
   let otpValidate = false;
-  if(otp && otp.length==6){
+  if(otp && otp.length==6 && validateNumber(otp)){
     otpValidate = true 
   }
   setErrorOtp(!otpValidate)

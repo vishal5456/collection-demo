@@ -34,6 +34,8 @@
         border-radius: 1rem;
         box-shadow: 5px 5px 15px black;
         padding: 0.5rem 1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
         &::placeholder {
           font-size: 1rem;
           font-weight: 500;
@@ -93,3 +95,8 @@
       }
     }
   }
+  
+.otpInput{
+  font-size: 1.3rem;
+    font-weight: 700;
+}

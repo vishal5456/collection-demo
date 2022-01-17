@@ -194,6 +194,19 @@ const validateOtp = ()=>{
             />
           </div>
           <div className={`${styles.formGroup} form-group`}>
+            <label>Mobile No</label>
+            <input
+              type="text"
+              autoComplete="off"
+              className={errorState["number"] ? `${styles.error} form-control` :"form-control"}
+              name="number"
+              placeholder="Enter Mobile No"
+              onChange={handleChange}
+              value={state.number ? state.number : ""}
+
+            />
+          </div>
+          <div className={`${styles.formGroup} form-group`}>
             <label>Age</label>
             <input
               type="text"
@@ -225,19 +238,7 @@ const validateOtp = ()=>{
               :null
             }
           </div>
-          <div className={`${styles.formGroup} form-group`}>
-            <label>Mobile No</label>
-            <input
-              type="text"
-              autoComplete="off"
-              className={errorState["number"] ? `${styles.error} form-control` :"form-control"}
-              name="number"
-              placeholder="Enter Mobile No"
-              onChange={handleChange}
-              value={state.number ? state.number : ""}
-
-            />
-          </div>
+          
           <div className={styles.btn}>
               <button
                 type="button"
@@ -256,7 +257,7 @@ const validateOtp = ()=>{
               <input
                 type="text"
                 autoComplete="off"
-                className={errorOtp ? `${styles.error} form-control` : "form-control"}
+                className={errorOtp ? `${styles.error} form-control` : `${styles.otpInput} form-control`}
                 placeholder="Enter OTP"
                 onChange={(e) => {setOtp(e.target.value); setErrorOtp(false)}}
                 value={otp ? otp : ""}

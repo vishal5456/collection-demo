@@ -11,9 +11,11 @@
     border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2) !important;
     @media (max-width: 991px) {
-        position: static;
-        max-width: 100%;
-        min-width: auto;
+        position: absolute;
+    background: linear-gradient(45deg, #b591bd, #f9a569cf);
+        
+        min-width: 100%;
+        margin-top: 1.5rem;
         max-height: none;
     }
     .mobileListUiContainer {
@@ -35,6 +37,9 @@
         border-left: 0 !important;
         @media (max-width: 991px) {
             max-height: none;
+            background: linear-gradient( 
+                45deg
+                 , #e6e1e8, #ff6a00cf);;
         }
         ul {
             width: 100%;
@@ -46,6 +51,8 @@
                 font-size: 1.3rem;
                 padding: 10px 20px;
                 border: none;
+                color: white;
+                font-weight: 600;
                 &:hover {
                     background: rgba(0, 0, 0, 0.1);
                     cursor: pointer;

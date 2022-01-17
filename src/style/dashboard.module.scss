@@ -2,7 +2,7 @@
     background-color: #F6F7F9;
     height: 100%;
 .header{
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     display: flex;
     justify-content: space-between;
    .title{
@@ -20,7 +20,7 @@
 }
 }
 .searchContainer{
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     display: flex;
     justify-content: space-between;
     input{
@@ -51,7 +51,7 @@
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -101,7 +101,7 @@
 .collectionCardContainer{
     padding: 1rem 1rem 0px 1rem;
     margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
